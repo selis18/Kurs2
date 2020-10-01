@@ -18,3 +18,5 @@ Route::get('/', 'App\Http\Controllers\MainController@main');
 Route::get('/about', 'App\Http\Controllers\MainController@about');
 
 Route::get('/cabinet', 'App\Http\Controllers\MainController@cabinet');
+
+Route::post('/cabinet/lk', 'App\Http\Controllers\MainController@cabinet_lk');

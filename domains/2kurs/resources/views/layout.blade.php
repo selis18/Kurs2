@@ -16,7 +16,7 @@
         <a class="p-2 text-white-50" href="/about">О нас</a>
         <a class="p-2 text-white-50" href="#">Контакты</a>
     </nav>
-    <a class="btn btn-outline-light" href="#">Личный кабинет</a>
+    <a class="btn btn-outline-light" href="/cabinet">Личный кабинет</a>
 </div>
     @yield('main_content')
 </body>

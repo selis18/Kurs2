@@ -17,4 +17,8 @@ class MainController extends Controller
     public function cabinet() {
         return view('cabinet');
     }
+
+    public function cabinet_lk(Request $request) {
+        dd($request);
+    }
 }
