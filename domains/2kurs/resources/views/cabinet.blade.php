@@ -22,6 +22,16 @@
     @csrf
     <input type="email" name="email" placeholder="Введите почту" class="form-control"> <br>
     <input type="password" name="password" placeholder="Введите пароль" class="form-control"> <br>
-    <button type="submit" class="btn btn-success">Отправить</button>
+    <button type="submit" class="log btn btn-success">Войти</button>
+    <button type="submit" class="sign btn btn-dark">Регистрация</button>
 </form>
+
+    <h1>All users</h1>
+    @foreach($user as $users)
+        <div class="alert alert-warning">
+            <h4>{{$users->id}}</h4>
+            <h2>{{$users->email}}</h2>
+            <h3>{{$users->password}}</h3>
+        </div>
+    @endforeach
 @endsection

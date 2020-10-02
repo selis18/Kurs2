@@ -13,7 +13,7 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', 'App\Http\Controllers\MainController@main');
+Route::get('/', 'App\Http\Controllers\MainController@main')->name('lk');
 
 Route::get('/about', 'App\Http\Controllers\MainController@about');
 
