@@ -19,6 +19,9 @@ class MainController extends Controller
     }
 
     public function cabinet_lk(Request $request) {
-        dd($request);
+        $valid = $request->validate([
+            'email' => 'required|min:5|max:100',
+            'password' => 'required|min:2|max:100'
+        ]);
     }
 }
